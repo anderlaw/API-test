@@ -5,6 +5,7 @@ var router = express.Router();
 
 /* test api */
 router.get('/test', function (req, res, next) {
+    console.log(req.body)
     res.send('API touched')
 })
 module.exports = router;
